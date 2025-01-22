@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Muhammed Afsal Hudawi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="col-md-4 mb-4">
+        <button class="menu-button" onclick="toggleDropdown()">☰
+          <span class="button-label">Menu</span>
+        </button>
+        <nav class="dropdown-menu" id="dropdownMenu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="1about.html">About</a></li>
+            <li><a href="2portfolio.html">Portfolio</a></li>
+            <li><a href="3Certificates.html">Certificates</a></li>
+            <li><a href="4Gallery.html">Gallery</a></li>
+            <li><a href="5Services.html">Services</a></li>
+            <li><a href="6Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <img
+          src="https://media.licdn.com/dms/image/v2/D5603AQFysai9kNbjyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1667623882362?e=1742428800&v=beta&t=WQPL2ngz86oWt4KMHNMWtWFumrWgwMo8K7BMp4T-3xU"
+          alt="Muhammed Afsal Hudawi" class="profile-photo">
+        <h1 class="site-title">About Me</h1>
+      </div>
+    </div>
+  </header>
+  <div class="container my-5">
+    <section id="about-me" class="bg-light p-4 rounded">
+      <h2>Biography</h2>
+      <p>
+        Muhammed Afsal Hudawi is a dedicated educator with dual postgraduate degrees in Islamic Studies and English
+        Literature...
+      </p>
+      <p>
+        Throughout his career, Muhammed has authored books on parenting and the integration of AI tools in education...
+      </p>
+      <p>
+        His career goal is to contribute meaningfully to education, inspiring students and educators alike to embrace
+        knowledge and professionalism.
+      </p>
+    </section>
+  </div>
+  <footer class="text-white text-center py-3">
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/muhammed-afsal-545431155/" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/afsalprmric" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/afsalpmric/" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:afsalpmric@gmail.com" target="_blank" class="social-icon">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.youtube.com/@muhammedafsalhudawi5502" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://t.me/+919526633572" target="_blank" class="social-icon">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="https://wa.me/+919526633572" target="_blank" class="social-icon">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="tel:+919526633572" class="social-icon">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Muhammed Afsal Hudawi. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Function to toggle the dropdown menu
+    function toggleDropdown() {
+      const dropdownMenu = document.getElementById('dropdownMenu');
+      dropdownMenu.classList.toggle('active');
+    }
+
+    // Function to close the dropdown if clicked outside
+    window.onclick = function (event) {
+      const dropdownMenu = document.getElementById('dropdownMenu');
+      const menuButton = document.querySelector('.menu-button');
+
+      // Check if the click was outside the dropdown and the button
+      if (!event.target.matches('.menu-button') && !dropdownMenu.contains(event.target)) {
+        // Close the dropdown
+        dropdownMenu.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+
+</html>

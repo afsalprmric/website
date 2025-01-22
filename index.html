@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Muhammed Afsal Hudawi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="col-md-4 mb-4">
+        <button class="menu-button" onclick="toggleDropdown()">☰
+          <span class="button-label">Menu</span>
+        </button>
+        <nav class="dropdown-menu" id="dropdownMenu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="1about.html">About</a></li>
+            <li><a href="2portfolio.html">Portfolio</a></li>
+            <li><a href="3Certificates.html">Certificates</a></li>
+            <li><a href="4Gallery.html">Gallery</a></li>
+            <li><a href="5Services.html">Services</a></li>
+            <li><a href="6Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <img
+          src="https://media.licdn.com/dms/image/v2/D5603AQFysai9kNbjyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1667623882362?e=1742428800&v=beta&t=WQPL2ngz86oWt4KMHNMWtWFumrWgwMo8K7BMp4T-3xU"
+          alt="Muhammed Afsal Hudawi" class="profile-photo">
+        <h1 class="site-title">Muhammed Afsal Hudawi</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Personal Website</h1>
+      <p>Discover my journey, explore my work, and connect with me.</p>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am Muhammed Afsal Hudawi, an experienced professional with expertise in multiple domains. Explore this site
+        to
+        learn more about my achievements, skills, and memorable moments.</p>
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section class="quick-links">
+    <div class="card">
+      <h2>Portfolio</h2>
+      <p>Discover my projects and accomplishments.</p>
+      <a href="2portfolio.html" class="btn">Explore</a>
+    </div>
+    <div class="card">
+      <h2>Certificates</h2>
+      <p>View my certifications and professional milestones.</p>
+      <a href="3Certificates.html" class="btn">Explore</a>
+    </div>
+    <div class="card">
+      <h2>Gallery</h2>
+      <p>Take a look at my memorable moments and achievements.</p>
+      <a href="4Gallery.html" class="btn">Explore</a>
+    </div>
+  </section>
+  <!-- Contact Section -->
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/muhammed-afsal-545431155/" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/afsalprmric" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/afsalpmric/" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="mailto:afsalpmric@gmail.com" target="_blank" class="social-icon">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.youtube.com/@muhammedafsalhudawi5502" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://t.me/+919526633572" target="_blank" class="social-icon">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="https://wa.me/+919526633572" target="_blank" class="social-icon">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="tel:+919526633572" class="social-icon">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div>
+
+    <p>&copy; 2025 Muhammed Afsal Hudawi. All Rights Reserved.</p>
+  </footer>
+  <script>
+    // Function to toggle the dropdown menu
+    function toggleDropdown() {
+      const dropdownMenu = document.getElementById('dropdownMenu');
+      dropdownMenu.classList.toggle('active');
+    }
+
+    // Function to close the dropdown if clicked outside
+    window.onclick = function (event) {
+      const dropdownMenu = document.getElementById('dropdownMenu');
+      const menuButton = document.querySelector('.menu-button');
+
+      // Check if the click was outside the dropdown and the button
+      if (!event.target.matches('.menu-button') && !dropdownMenu.contains(event.target)) {
+        // Close the dropdown
+        dropdownMenu.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+
+</html>
